@@ -6,7 +6,8 @@
 
     background: linear-gradient(0deg, #FD9800 0%, rgba(0, 102, 255, 0.880208) 102.64%, rgba(217, 217, 217, 0) 102.65%);
     background-attachment: fixed;
-
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 100%;
 }
 
 .box-div {
@@ -39,25 +40,71 @@
     margin: 20px;
 }
 
-#A {
-    position: relative;
-    right: 30%;
+p{
+text-align: center;
 }
 
-#label-el-A {
-    position: relative;
-    right: 30%;
-    flex-direction: none;
-    display: inline;
+#spanA {
+  position: relative;
+  right: 7%;
+  color: white;
+  background-color: orange;
+  padding-right: 2%;
+  border-radius: 100px;
+  
 }
 
-#B {
-    position: relative;
-    bottom: 17%;
-    left: 30%;
+#spanA:hover{
+    background-color: rgb(191, 125, 3);
 }
 
-#label-el-B {
+#spanB {
     position: relative;
-    bottom: 17%;
+    left: 5%;
+    color: white;
+        background-color: rgb(0, 166, 255);
+        padding-right: 2%;
+        border-radius: 10px;
 }
+
+
+
+#spanC {
+    position: relative;
+    right: 7%;
+    position: relative;
+    color: white;
+    background-color: rgb(0, 166, 255);
+    padding-right: 2%;
+    border-radius: 10px;
+}
+
+
+
+#spanD {
+    position: relative;
+    left: 5%;
+    color: white;
+    background-color: orange;
+    padding-right: 2%;
+    border-radius: 10px;
+    
+}
+
+
+
+
+#question-interpreté-input{
+    position: relative;
+    left: 17%;
+    
+    
+}
+
+input{
+position: relative;
+top: 1%;
+}
+
+
+
