@@ -1,24 +1,29 @@
 /* Rectangle 1 */
-:root {
+html {
     /* Rectangle 1 */
 
-    position: absolute;
-    width: 100%;
-    height: 100%;
+height: 100%;
+width: 100%;
 
     background: linear-gradient(0deg, #FD9800 0%, rgba(0, 102, 255, 0.880208) 102.64%, rgba(217, 217, 217, 0) 102.65%);
     background-attachment: fixed;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-family: Verdana, Tahoma, sans-serif;
 font-size: 100%;
+
+}
+
+body{
+    height: 100%;
+    width: 100%;
 }
 
 /* Rectangle 5 */
 
 /* Rectangle 5 */
-.box-div {
-    position: absolute;
+#box-div {
+   
     width: 90%;
-    height: fit-content;
+    height:  fit-content;
     margin: 5%;
     background: #D9D9D9;
     border-radius: 29px;
@@ -41,81 +46,168 @@ font-size: 100%;
 /* Rectangle 30 */
 .bruh {
     width: 80%;
-    height: fit-content;
+    height: 100%;
     background: rgba(255, 255, 255, 0.880208);
     border-radius: 28.63025px;
-   
     margin-bottom: 1%;
     margin-top: 1%;
     padding: 1% 0%;
-    text-align: center;
+    text-align: center; 
 }
 
 p{
 text-align: center;
 }
 
-#spanA {
+
+.spanA {
   position: relative;
-  right: 7%;
+  right: 3%;
+  height: 100%;
   color: white;
   background-color: orange;
   padding-right: 2%;
   border-radius: 100px;
-  
+  top: 100;
 }
 
-#spanA:hover{
+.spanA:hover{
     background-color: rgb(191, 125, 3);
 }
 
-#spanB {
+.spanB {
     position: relative;
     left: 5%;
-    color: white;
-        background-color: rgb(0, 166, 255);
-        padding-right: 2%;
-        border-radius: 10px;
-}
-
-
-
-#spanC {
-    position: relative;
-    right: 7%;
-    position: relative;
     color: white;
     background-color: rgb(0, 166, 255);
     padding-right: 2%;
     border-radius: 10px;
 }
 
+.spanB:hover,.spanC:hover  {
+    background-color: rgb(0, 113, 154);
+}
+
+.spanC {
+    position: relative;
+    color: white;
+    background-color: rgb(0, 166, 255);
+    padding-right: 2%;
+    border-radius: 10px;
+    right: 3%;
+}
 
 
-#spanD {
+
+.spanD {
     position: relative;
     left: 5%;
     color: white;
     background-color: orange;
     padding-right: 2%;
     border-radius: 10px;
+    bottom: 100%;
     
+}
+
+.spanD:hover {
+    background-color: rgb(191, 125, 3);
 }
 
 
 
 
-#question-interpreté-input{
+.question-interpreté-input{
     position: relative;
-    left: 17%;
+    left: 1%;
     
     
 }
 
-input{
+label{
 position: relative;
-top: 1%;
 }
 
+#A{
+ position: relative;
+ top: 2%;  
+}
+
+#B {
+    position: relative;
+    top: 2%;
+}
+
+#C {
+    position: relative;
+    top: 2%;
+}
+
+#D {
+    position: relative;
+    top: 2%;
+}
+
+#A2 {
+    position: relative;
+    top: 2%;
+}
+
+#B2 {
+    position: relative;
+    top: 2%;
+}
+
+#C2 {
+    position: relative;
+    top: 2%;
+}
+
+#D2 {
+    position: relative;
+    top: 2%;
+}
+
+
+#A2 {
+    position: relative;
+    top: 2%;
+}
+
+#B2 {
+    position: relative;
+    top: 2%;
+}
+
+#C2 {
+    position: relative;
+    top: 2%;
+}
+
+#D2 {
+    position: relative;
+    top: 2%;
+}
+
+
+#A3 {
+    position: relative;
+    top: 2%;
+}
+
+#B3 {
+    position: relative;
+    top: 2%;
+}
+
+#C3 {
+    position: relative;
+    top: 2%;
+}
+
+#D3 {
+    position: relative;
+    top: 2%;
+}
 
 
