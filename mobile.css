@@ -1,6 +1,4 @@
-/* Rectangle 1 */
 :root {
-    /* Rectangle 1 */
 
     position: absolute;
     width: 100%;
@@ -11,43 +9,34 @@
 
 }
 
-/* Rectangle 5 */
-
-/* Rectangle 5 */
 .box-div {
+
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
     position: absolute;
     width: 90%;
-    height: 150%;
-    margin: 5%;
+    
     background: #D9D9D9;
     border-radius: 29px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 10%;
+
 
 }
-
-
-
-
-
-
-
-/* Rectangle 30 */
-.bruh {
+.question {
     z-index: 0;
-    width: 80%;
-    height: 100%;
     background: rgba(255, 255, 255, 0.880208);
-    border-radius: 28.63025px;
     display: flex;
-    align-items: center;
+    align-items:flex-start;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 1%;
-    margin-top: 1%;
+    margin: 20px;
 }
 
 #A {
