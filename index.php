@@ -161,7 +161,7 @@
                     <div><input type="textarea" name="question8" class="textbox" cols="4" placeholder="<?php echo($textfields[3])?>"></div>
                 </fieldset>
                 <div id="submit-div">
-                    <input type="submit" value="SUBMIT" id="submit">
+                    <input type="submit" value="ENVOYER" id="submit">
                 </div>
             </form>
             <div id= "statistics">
