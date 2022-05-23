@@ -12,7 +12,20 @@
     <body>
         <?php
             $percentages = getStatistics(getFile());
+            $textfields = array("","","","");
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                if (isset($_POST['question4'])){
+                    $textfields[0] = $_POST['question4'];
+                }
+                if (isset($_POST['question5'])){
+                    $textfields[1] = $_POST['question5'];
+                }
+                if (isset($_POST['question6'])){
+                    $textfields[2] = $_POST['question6'];
+                }
+                if (isset($_POST['question8'])){
+                    $textfields[3] = $_POST['question8'];
+                }
                 if( !ipAdressExists($_SERVER['REMOTE_ADDR']) ){
                     $file = getFile();
 
@@ -109,43 +122,43 @@
             <h1 id="title"><a href="https://www.youtube.com/watch?v=vOMMPsiVZDc">Naître et ne pas être</a></h1> 
             <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"  onkeydown="return event.key != 'Enter';">
                 <fieldset class = "question">
-                    <legend>Les "enfants noirs" n'ont pas le droit de?</legend>
+                    <legend>Les "enfants noirs" n'ont pas le droit de ...</legend>
                     <div><input type="radio" name="question1" class="checkbox" value="0" checked="checked"><label>Aller à l'école</label></div>
-                    <div><input type="radio" name="question1" class="checkbox" value="1"><label>Ouvrir on compte en banc</label></div>
-                    <div><input type="radio" name="question1" class="checkbox" value="2"><label>Postuller un emplois</label></div>
-                    <div><input type="radio" name="question1" class="checkbox" value="3"><label>Toutes les reponses</label></div>
+                    <div><input type="radio" name="question1" class="checkbox" value="1"><label>Ouvrir un compte en banque</label></div>
+                    <div><input type="radio" name="question1" class="checkbox" value="2"><label>Postuler à un emploi</label></div>
+                    <div><input type="radio" name="question1" class="checkbox" value="3"><label>Toutes les réponses</label></div>
                 </fieldset>
                 <fieldset class = "question">
-                    <legend>Combien d'argent il faut payer pour les ammendes de Lìshuì aujourd'hui?</legend>
+                    <legend>Combien d'argent faut-il pour payer les amendes de Lìshuì aujourd'hui ?</legend>
                     <div><input type="radio" name="question2" class="checkbox" value="0" checked="checked"><label>600€</label></div>
                     <div><input type="radio" name="question2" class="checkbox" value="1"><label">12000€</label></div>
                     <div><input type="radio" name="question2" class="checkbox" value="2"><label>600$</label></div>
                     <div><input type="radio" name="question2" class="checkbox" value="3"><label>12000$</label></div>
                 </fieldset>
                 <fieldset class = "question">
-                    <legend>Chaque jour elle va dans la bibliothéque pour?</legend>
-                    <div><input type="radio" name="question3" class="checkbox" value="0" checked="checked"><label>Passer de temps au centre-ville</label></div>
-                    <div><input type="radio" name="question3" class="checkbox" value="1"><label>Apprendre sur le loi chinois</label></div>
-                    <div><input type="radio" name="question3" class="checkbox" value="2"><label>Passer sa temps libre par lire des romains</label></div>
-                    <div><input type="radio" name="question3" class="checkbox" value="3"><label>Toutes les reponses</label></div>
+                    <legend>Pourquoi Lìchuì va-t-il à la bibliothèque tous les jours ?</legend>
+                    <div><input type="radio" name="question3" class="checkbox" value="0" checked="checked"><label>Passer du temps dans le centre-ville</label></div>
+                    <div><input type="radio" name="question3" class="checkbox" value="1"><label>Apprendre la loi chinoise</label></div>
+                    <div><input type="radio" name="question3" class="checkbox" value="2"><label>Lire des romans</label></div>
+                    <div><input type="radio" name="question3" class="checkbox" value="3"><label>Toutes les réponses</label></div>
                 </fieldset>
                 <fieldset class = "question">
-                    <legend>Pourqoui les avocats ne voulaint pas défendre Lìshuì?</legend>
-                    <div><input type="textarea" name="question4" class="textbox"></div>
+                    <legend>Pourquoi les avocats ne veulent-ils pas défendre Lìshuì ?</legend>
+                    <div><input type="textarea" name="question4" class="textbox" cols="4" placeholder="<?php echo($textfields[0])?>"></div>
                 </fieldset>
                 <fieldset class = "question">
                     <legend>Pourqoui les parents de Ron ont prétendu de se séparer pour sept mois?</legend>
-                    <div><input type="textarea" name="question5" class="textbox"></div>
+                    <div><input type="textarea" name="question5" class="textbox" cols="4" placeholder="<?php echo($textfields[1])?>"></div>
                 </fieldset>
                 <fieldset class = "question">
-                    <legend>Pourquoi les ammendes changent dependant d'où on vie?</legend>
-                    <div><input type="textarea" name="question6" class="textbox"></div>
+                    <legend>Pourquoi les amendes changent-elles en fonction de l'endroit où l'on vit ?</legend>
+                    <div><input type="textarea" name="question6" class="textbox" cols="4" placeholder="<?php echo($textfields[2])?>"></div>
                 </fieldset>
                 <fieldset class = "question">
-                    <legend>Est-ce que tu trouve que la politique enfant unique est nécessaire? Qu'est-ce que tu changerais?</legend>
+                    <legend>Trouves-tu que la politique de l'enfant unique est nécessaire ? Qu'est-ce que tu changerais?</legend>
                     <div id="divYN"><input type="radio" name="question7" class="yesNo" value="0" style="accent-color:#FD9800" checked="checked"><label>Yes</label>
                          <input type="radio" name="question7" class="yesNo" value="1" style="accent-color:#0000ff"><label>No</label></div>
-                    <div><input type="textarea" name="question8" class="textbox"></div>
+                    <div><input type="textarea" name="question8" class="textbox" cols="4" placeholder="<?php echo($textfields[3])?>"></div>
                 </fieldset>
                 <input type="submit" value="SUBMIT" id="submit">
             </form>
