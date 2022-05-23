@@ -1,71 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="mobile.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="mobile.css">
+    </head>
 
-<body>
- <div class="box-div">
-      <div class="bruh">
-        <p>choix multiple</p>
-       <span id="spanA"> <input type="radio" name="question1" class="questions" class="questionA" id="A"><label id="label-el-A" for="A">question1</label></span>
-       <span id="spanB"><input type="radio" name="question1" class="questions" class="questionB" id="B"><label id="label-el-B" for="B">question2</label></span><br><br>
-       <span id="spanC"> <input type="radio" name="question1" class="questions" class="questionC" id="C"><label id="label-el-C" for="C">question3</label></span>
-        <span id="spanD"><input type="radio" name="question1" class="questions" class="questionD" id="D"><label id="label-el-D" for="D">question4</label></span>
-
+    <body>
+        <div class = "box-div">
+            <h1 id="title">Fun Math Quiz</h1> 
+            <form method="post">
+                <fieldset class = "question">
+                    <legend>What is 0 devided by 0?</legend>
+                    <div><input type="radio" name="question1" class="checkbox" value="0" checked="checked"><label>Infinity</label></div>
+                    <div><input type="radio" name="question1" class="checkbox" value="1"><label>Zero</label></div>
+                    <div><input type="radio" name="question1" class="checkbox" value="2"><label>One</label></div>
+                    <div><input type="radio" name="question1" class="checkbox" value="3"><label>Not Defined</label></div>
+                </fieldset>
+                <fieldset class = "question">
+                    <legend>What is 2 devided by 3?</legend>
+                    <div><input type="radio" name="question2" class="checkbox" value="0" checked="checked"><label>2/3</label></div>
+                    <div><input type="radio" name="question2" class="checkbox" value="1"><label">0.66666...</label></div>
+                    <div><input type="radio" name="question2" class="checkbox" value="2"><label>Not defined</label></div>
+                    <div><input type="radio" name="question2" class="checkbox" value="3"><label>3/2</label></div>
+                </fieldset>
+                <fieldset class = "question">
+                    <legend>What is 0 factorial?</legend>
+                    <div><input type="radio" name="question3" class="checkbox" value="0" checked="checked"><label>One</label></div>
+                    <div><input type="radio" name="question3" class="checkbox" value="1"><label>Zero</label></div>
+                    <div><input type="radio" name="question3" class="checkbox" value="2"><label>Minus one</label></div>
+                    <div><input type="radio" name="question3" class="checkbox" value="3"><label>Not Defined</label></div>
+                </fieldset>
+                <fieldset class = "question">
+                    <legend>Explain Question 1:</legend>
+                    <div><input type="textarea" name="question4" class="textbox"></div>
+                </fieldset>
+                <fieldset class = "question">
+                    <legend>Explain Question 2:</legend>
+                    <div><input type="textarea" name="question5" class="textbox"></div>
+                </fieldset>
+                <fieldset class = "question">
+                    <legend>Explain Question 3:</legend>
+                    <div><input type="textarea" name="question6" class="textbox"></div>
+                </fieldset>
+                <fieldset class = "question">
+                    <legend>Did you like this Math Quiz (Explain your answer)?</legend>
+                    <div id="divYN"><input type="radio" name="question7" class="yesNo" value="0" style="accent-color:#FD9800" checked="checked"><label>Yes</label>
+                         <input type="radio" name="question7" class="yesNo" value="1" style="accent-color:#0000ff"><label>No</label></div>
+                    <div><input type="textarea" name="question7.2" class="textbox"></div>
+                </fieldset>
+                <input type="submit" value="SUBMIT" id="submit">
+            </form>
+            <div id= "statistics">
+                <figure class="pie-chart" style="background:
+                    radial-gradient(
+                        circle closest-side,
+                        white 0,
+                        white 26.22%,
+                        transparent 26.22%,
+                        transparent 46%,
+                        white 0
+                    ),
+                    conic-gradient(
+                        #00ff00 0,
+                        #00ff00 50%,
+                        #ff0000 0,
+                        #ff0000 100%
+                    );">
+                    <h2>Question 1</h2>
+                </figure>
+                <figure class="pie-chart" style="background:
+                    radial-gradient(
+                        circle closest-side,
+                        white 0,
+                        white 26.22%,
+                        transparent 26.22%,
+                        transparent 46%,
+                        white 0
+                    ),
+                    conic-gradient(
+                        #00ff00 0,
+                        #00ff00 50%,
+                        #ff0000 0,
+                        #ff0000 100%
+                    );">
+                    <h2>Question 2</h2>
+                </figure>
+                <figure class="pie-chart" style="background:
+                    radial-gradient(
+                        circle closest-side,
+                        white 0,
+                        white 26.22%,
+                        transparent 26.22%,
+                        transparent 46%,
+                        white 0
+                    ),
+                    conic-gradient(
+                        #00ff00 0,
+                        #00ff00 50%,
+                        #ff0000 0,
+                        #ff0000 100%
+                    );">
+                    <h2>Question 3</h2>
+                </figure>
+                <figure class="pie-chart" style="background:
+                    radial-gradient(
+                        circle closest-side,
+                        white 0,
+                        white 26.22%,
+                        transparent 26.22%,
+                        transparent 46%,
+                        white 0
+                    ),
+                    conic-gradient(
+                        #FD9800 0,
+                        #FD9800 50%,
+                        #0000ff 0,
+                        #0000ff 100%
+                    );">
+                    <h2>Question 7</h2>
+                </figure> 
+            </div>
         </div>
-        <div class="bruh">
-                <p>choix multiple</p> 
-        <span id="spanA"> <input type="radio" name="question2" class="questions" class="questionA" id="2A"><label id="label-el-A" for="2A">
-                question1</label></span>
-        <span id="spanB"><input type="radio" name="question2" class="questions" class="questionB" id="2B"><label id="label-el-B"
-                for="2B">question2</label></span><br><br>
-        <span id="spanC"> <input type="radio" name="question2" class="questions" class="questionC" id="2C"><label id="label-el-C"
-                for="2C">question3</label></span>
-        <span id="spanD"><input type="radio" name="question2" class="questions" class="questionD" id="2D"><label id="label-el-D"
-                for="2D">question4</label></span>
-
-        </div>
-        <div class="bruh">
-                <p>choix multiple</p>
-        <span id="spanA"> <input type="radio" name="question3" class="questions" class="questionA" id="3A"><label id="label-el-A"
-                for="3A">question1</label></span>
-        <span id="spanB"><input type="radio" name="question3" class="questions" class="questionB" id="3B"><label id="label-el-B"
-                for="3B">question2</label></span><br><br>
-        <span id="spanC"> <input type="radio" name="question3" class="questions" class="questionC" id="3C"><label id="label-el-C"
-                for="3C">question3</label></span>
-        <span id="spanD"><input type="radio" name="question3" class="questions" class="questionD" id="3D"><label id="label-el-D"
-                for="3D">question4</label></span>
-
-        </div>
-        <div class="bruh">
-        
-            <p>question interpretation</p>
-            <textarea id="question-interpreté-input" ></textarea>
-        </div>
-        <div class="bruh">
-        
-        </div>
-        <div class="bruh">
-        
-        </div>
-        <div class="bruh">
-        
-        </div>
-        <div class="bruh">
-        
-        </div>
-        <div class="bruh">
-        
-        </div>
-      </div id="bruh">
-</div>
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 
 </html>
