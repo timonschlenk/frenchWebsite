@@ -1,79 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="mobile.css">
-</head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-<body>
-        <div class="box-div">
-                <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-                        <h1 id="titre">Fun Math Quiz</h1>
-                        <fieldset class="question">
-                                <legend>What is 0 devided by 0?</legend>
-                                <div class="orange" ><input type="radio" name="question1" class="checkbox"
-                                                value="0" id="q1"><label for="q1">Infinity</label></div>
-                                <div class="blue"><input type="radio" name="question1"     class="checkbox" value="1" id="q2"><label for="q2">Zero</label>
-                                </div>
-                                <div class="orange"><input type="radio" name="question1" class="checkbox" value="2" id="q3"><label for="q3">One</label>
-                                </div>
-                                <div class="blue"><input type="radio" name="question1" class="checkbox" value="3" id="q4"><label for="q4">Not
-                                                Defined</label></div>
-                        </fieldset>
-                        <fieldset class="question">
-                                <legend>What is 2 devided by 3?</legend>
-                                <div class="orange"><input type="radio" name="question2" class="checkbox" value="0" id="q5"><label for="q5">2/3</label>
-                                </div>
-                                <div class="blue"><input type="radio" name="question2" class="checkbox" value="1" id="q6">
-                                        <label for="q6">0.66666...</label>
-                                </div>
-                                <div class="orange"><input type="radio" name="question2" class="checkbox" value="2" id="q7"><label for="q7">Not
-                                                defined</label></div>
-                                <div class="blue"><input type="radio" name="question2" class="checkbox" value="3" id="q8"><label for="q8">3/2</label>
-                                </div>
-                        </fieldset>
-                        <fieldset class="question">
-                                <legend>What is 0 factorial?</legend>
-                                <div class="orange"><input type="radio" name="question3" class="checkbox" value="0" id="q9"><label for="q9">One</label>
-                                </div>
-                                <div class="blue"><input type="radio" name="question3" class="checkbox" value="1" id="q10"><label>Zero</label>
-                                </div>
-                                <div class="orange"><input type="radio" name="question3" class="checkbox" value="2" id="q11"><label for="q11">Minus
-                                                one</label></div>
-                                <div class="blue"><input type="radio" name="question3" class="checkbox" value="3" id="q12"><label for="12">Not
-                                                Defined</label></div>
-                        </fieldset>
-                        <fieldset class="question">
-                                <legend>Explain Question 1:</legend>
-                                <div><input type="text" name="question4" class="textbox"></div>
-                        </fieldset>
-                        <fieldset class="question">
-                                <legend>Explain Question 2:</legend>
-                                <div><input type="text" name="question5" class="textbox"></div>
-                        </fieldset>
-                        <fieldset class="question">
-                                <legend>Explain Question 3:</legend>
-                                <div><input type="text" name="question6" class="textbox"></div>
-                        </fieldset>
-                        <fieldset class="question" id="last-question">
-                                <legend>Did you like this Math Quiz (Explain your answer)?</legend>
-                                <div><input type="radio" name="question7" class="yesNo" value="0"><label>Yes</label>
-                                </div>
-                                <div><input type="radio" name="question7" class="yesNo" value="1"><label>No</label>
-                                </div>
-                                <div><input type="text" name="question7.2" class="textbox"></div>
-                        </fieldset>
-                        <input type="submit" value="SUBMIT" class="submit">
-                </form>
-                <h1 id="counter">
-                       
-                </h1>
+    <body>
+        <div class = "box-div">
+            <h1 id="title"><a href="https://www.youtube.com/watch?v=vOMMPsiVZDc">Naître et ne pas être</a></h1>
+            <h4 class="easter-egg"><a class="easter-egg" href="https://youtu.be/39UDZMgPg5k" target="_blank">rick</a></h4>
+            <form method="post">
+                <fieldset class = "question">
+                        <legend>Les "enfants noirs" n'ont pas le droit de?</legend>
+                        <div class=""><input type="radio" name="question1" class="checkbox" value="0" checked="checked" style="accent-color:#FD9800"><label>Aller à l'école</label></div>
+                        <div><input type="radio" name="question1" class="checkbox" value="1"><label>Ouvrir on compte en banc</label></div>
+                        <div><input type="radio" name="question1" class="checkbox" value="2" style="accent-color:#FD9800"><label>Postuller un emplois</label></div>
+                        <div><input type="radio" name="question1" class="checkbox" value="3"><label>Toutes les reponses</label></div>
+                    </fieldset>
+                    <fieldset class = "question">
+                        <legend>Combien d'argent il faut payer pour les ammendes de Lìshuì aujourd'hui?</legend>
+                        <div><input type="radio" name="question2" class="checkbox" value="0" checked="checked" style="accent-color:#FD9800" ><label>600€</label></div>
+                        <div><input type="radio" name="question2" class="checkbox" value="1"><label">12000€</label></div>
+                        <div><input type="radio" name="question2" class="checkbox" value="2" style="accent-color:#FD9800"><label>600$</label></div>
+                        <div><input type="radio" name="question2" class="checkbox" value="3"><label>12000$</label></div>
+                    </fieldset>
+                    <fieldset class = "question">
+                        <legend>Chaque jour elle va dans la bibliothéque pour?</legend>
+                        <div><input type="radio" name="question3" class="checkbox" value="0" checked="checked" style="accent-color:#FD9800"><label>Passer de temps au centre-ville</label></div>
+                        <div><input type="radio" name="question3" class="checkbox" value="1"><label>Apprendre sur le loi chinois</label></div>
+                        <div><input type="radio" name="question3" class="checkbox" value="2" style="accent-color:#FD9800"><label>Passer sa temps libre par lire des romains</label></div>
+                        <div><input type="radio" name="question3" class="checkbox" value="3"><label>Toutes les reponses</label></div>
+                    </fieldset>
+                    <fieldset class = "question">
+                        <legend>Pourqoui les avocats ne voulaint pas défendre Lìshuì?</legend>
+                        <div><input type="textarea" name="question4" class="textbox"></div>
+                    </fieldset>
+                    <fieldset class = "question">
+                        <legend>Pourqoui les parents de Ron ont prétendu de se séparer pour sept mois?</legend>
+                        <div><input type="textarea" name="question5" class="textbox"></div>
+                    </fieldset>
+                    <fieldset class = "question">
+                        <legend>Pourquoi les ammendes changent dependant d'où on vie?</legend>
+                        <div><input type="textarea" name="question6" class="textbox" ></div>
+                    </fieldset>
+                    <fieldset class = "question">
+                        <legend>Est-ce que tu trouve que la politique enfant unique est nécessaire? Qu'est-ce que tu changerais?</legend>
+                        <div id="divYN"><input type="radio" name="question7" class="yesNo" value="0" style="accent-color:#FD9800" checked="checked"><label>Yes</label>
+                             <input type="radio" name="question7" class="yesNo" value="1" style="accent-color:#0000ff"><label>No</label></div>
+                        <div><input type="textarea" name="question8" class="textbox"></div>
+                    </fieldset>
+                <input type="submit" value="SUBMIT" id="submit">
+            </form>
+            <div id= "statistics">
+                <figure class="pie-chart" style="background:
+                    radial-gradient(
+                        circle closest-side,
+                        white 0,
+                        white 26.22%,
+                        transparent 26.22%,
+                        transparent 46%,
+                        white 0
+                    ),
+                    conic-gradient(
+                        #00ff00 0,
+                        #00ff00 50%,
+                        #ff0000 0,
+                        #ff0000 100%
+                    );">
+                    <h2>Question 1</h2>
+                </figure>
+                <figure class="pie-chart" style="background:
+                    radial-gradient(
+                        circle closest-side,
+                        white 0,
+                        white 26.22%,
+                        transparent 26.22%,
+                        transparent 46%,
+                        white 0
+                    ),
+                    conic-gradient(
+                        #00ff00 0,
+                        #00ff00 50%,
+                        #ff0000 0,
+                        #ff0000 100%
+                    );">
+                    <h2>Question 2</h2>
+                </figure>
+                <figure class="pie-chart" style="background:
+                    radial-gradient(
+                        circle closest-side,
+                        white 0,
+                        white 26.22%,
+                        transparent 26.22%,
+                        transparent 46%,
+                        white 0
+                    ),
+                    conic-gradient(
+                        #00ff00 0,
+                        #00ff00 50%,
+                        #ff0000 0,
+                        #ff0000 100%
+                    );">
+                    <h2>Question 3</h2>
+                </figure>
+                <figure class="pie-chart" style="background:
+                    radial-gradient(
+                        circle closest-side,
+                        white 0,
+                        white 26.22%,
+                        transparent 26.22%,
+                        transparent 46%,
+                        white 0
+                    ),
+                    conic-gradient(
+                        #FD9800 0,
+                        #FD9800 50%,
+                        #0000ff 0,
+                        #0000ff 100%
+                    );">
+                    <h2>Question 7</h2>
+                </figure> 
+            </div>
         </div>
         <script src="script.js"></script>
-</body>
+    </body>
 
 </html>

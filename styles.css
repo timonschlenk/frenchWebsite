@@ -1,0 +1,101 @@
+:root {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(0deg, #FD9800 0%, #0000ff 100%);
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+.box-div {
+
+    display: flex;
+    align-items:stretch;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3%;
+    background: #D9D9D9;
+    border-radius: 29px;
+}
+
+
+.question {
+    z-index: 0;
+    background: rgba(255, 255, 255, 0.880208);
+    display: flex;
+    align-items:stretch;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    padding-right: 20px;
+}
+
+
+#title {
+    margin: 20px auto 0px auto;
+}
+
+
+.pie-chart {
+	position: relative;
+	width: 20vw;
+	min-height: 20vw;
+	margin: 20px 0px;
+	outline: 1px solid #ccc;
+}
+.pie-chart h2 {
+	position: absolute;
+    font-size: 2.5vw;
+	margin: 2vw;
+    margin-top: 0.8vw;
+}
+.pie-chart span:after {
+	display: inline-block;
+	content: "";
+	width: 0.8em;
+	height: 0.8em;
+	margin-left: 0.4em;
+	height: 0.8em;
+	border-radius: 0.2em;
+	background: currentColor;
+}
+
+#statistics {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}
+
+#submit {
+    padding: auto;
+    border:5px solid #0000ff;
+    border-radius: 100%;
+    width: 8vw;
+    height: 8vw;
+    min-width: 100px;
+    min-height: 100px;
+    margin:  20px 40vw;
+    font-size: 20px;
+}
+
+#submit:hover{
+    border-width: 10px;
+    font-size: 22px;
+    font-style: bold;
+
+}
+
+.textbox {
+    width: 100%;
+    font-size: 20px;
+    padding:5px;
+}
+
+.divYN {
+    flex-direction: column;
+}
