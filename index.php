@@ -65,10 +65,10 @@
                     $returnPercentages[0] = strval( $mfile[0][3] / ($mfile[0][0]+$mfile[0][1]+$mfile[0][2]+$mfile[0][3]) * 100) . "%";
                 }
                 if (($mfile[1][0]+$mfile[1][1]+$mfile[1][2]+$mfile[1][3]) > 0){
-                    $returnPercentages[1] = strval( ($mfile[1][0]+$mfile[1][1]) / ($mfile[1][0]+$mfile[1][1]+$mfile[1][2]+$mfile[1][3]) * 100) . "%";
+                    $returnPercentages[1] = strval( ($mfile[1][1]) / ($mfile[1][0]+$mfile[1][1]+$mfile[1][2]+$mfile[1][3]) * 100) . "%";
                 }
                 if (($mfile[2][0]+$mfile[2][1]+$mfile[2][2]+$mfile[2][3]) > 0){
-                    $returnPercentages[2] = strval( $mfile[2][0] / ($mfile[2][0]+$mfile[2][1]+$mfile[2][2]+$mfile[2][3]) * 100) . "%";
+                    $returnPercentages[2] = strval( $mfile[2][1] / ($mfile[2][0]+$mfile[2][1]+$mfile[2][2]+$mfile[2][3]) * 100) . "%";
                 }
                 if (($mfile[3][0]+$mfile[3][1]) > 0){
                     $returnPercentages[3] = strval( $mfile[3][0] / ($mfile[3][0]+$mfile[3][1]) * 100) . "%";
@@ -106,43 +106,43 @@
         ?>
 
         <div class = "box-div">
-            <h1 id="title">Fun Math Quiz</h1> 
+            <h1 id="title"><a href="https://www.youtube.com/watch?v=vOMMPsiVZDc">Naître et ne pas être</a></h1> 
             <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"  onkeydown="return event.key != 'Enter';">
                 <fieldset class = "question">
-                    <legend>What is 0 devided by 0?</legend>
-                    <div><input type="radio" name="question1" class="checkbox" value="0" checked="checked"><label>Infinity</label></div>
-                    <div><input type="radio" name="question1" class="checkbox" value="1"><label>Zero</label></div>
-                    <div><input type="radio" name="question1" class="checkbox" value="2"><label>One</label></div>
-                    <div><input type="radio" name="question1" class="checkbox" value="3"><label>Not Defined</label></div>
+                    <legend>Les "enfants noirs" n'ont pas le droit de?</legend>
+                    <div><input type="radio" name="question1" class="checkbox" value="0" checked="checked"><label>Aller à l'école</label></div>
+                    <div><input type="radio" name="question1" class="checkbox" value="1"><label>Ouvrir on compte en banc</label></div>
+                    <div><input type="radio" name="question1" class="checkbox" value="2"><label>Postuller un emplois</label></div>
+                    <div><input type="radio" name="question1" class="checkbox" value="3"><label>Toutes les reponses</label></div>
                 </fieldset>
                 <fieldset class = "question">
-                    <legend>What is 2 devided by 3?</legend>
-                    <div><input type="radio" name="question2" class="checkbox" value="0" checked="checked"><label>2/3</label></div>
-                    <div><input type="radio" name="question2" class="checkbox" value="1"><label">0.66666...</label></div>
-                    <div><input type="radio" name="question2" class="checkbox" value="2"><label>Not defined</label></div>
-                    <div><input type="radio" name="question2" class="checkbox" value="3"><label>3/2</label></div>
+                    <legend>Combien d'argent il faut payer pour les ammendes de Lìshuì aujourd'hui?</legend>
+                    <div><input type="radio" name="question2" class="checkbox" value="0" checked="checked"><label>600€</label></div>
+                    <div><input type="radio" name="question2" class="checkbox" value="1"><label">12000€</label></div>
+                    <div><input type="radio" name="question2" class="checkbox" value="2"><label>600$</label></div>
+                    <div><input type="radio" name="question2" class="checkbox" value="3"><label>12000$</label></div>
                 </fieldset>
                 <fieldset class = "question">
-                    <legend>What is 0 factorial?</legend>
-                    <div><input type="radio" name="question3" class="checkbox" value="0" checked="checked"><label>One</label></div>
-                    <div><input type="radio" name="question3" class="checkbox" value="1"><label>Zero</label></div>
-                    <div><input type="radio" name="question3" class="checkbox" value="2"><label>Minus one</label></div>
-                    <div><input type="radio" name="question3" class="checkbox" value="3"><label>Not Defined</label></div>
+                    <legend>Chaque jour elle va dans la bibliothéque pour?</legend>
+                    <div><input type="radio" name="question3" class="checkbox" value="0" checked="checked"><label>Passer de temps au centre-ville</label></div>
+                    <div><input type="radio" name="question3" class="checkbox" value="1"><label>Apprendre sur le loi chinois</label></div>
+                    <div><input type="radio" name="question3" class="checkbox" value="2"><label>Passer sa temps libre par lire des romains</label></div>
+                    <div><input type="radio" name="question3" class="checkbox" value="3"><label>Toutes les reponses</label></div>
                 </fieldset>
                 <fieldset class = "question">
-                    <legend>Explain Question 1:</legend>
+                    <legend>Pourqoui les avocats ne voulaint pas défendre Lìshuì?</legend>
                     <div><input type="textarea" name="question4" class="textbox"></div>
                 </fieldset>
                 <fieldset class = "question">
-                    <legend>Explain Question 2:</legend>
+                    <legend>Pourqoui les parents de Ron ont prétendu de se séparer pour sept mois?</legend>
                     <div><input type="textarea" name="question5" class="textbox"></div>
                 </fieldset>
                 <fieldset class = "question">
-                    <legend>Explain Question 3:</legend>
+                    <legend>Pourquoi les ammendes changent dependant d'où on vie?</legend>
                     <div><input type="textarea" name="question6" class="textbox"></div>
                 </fieldset>
                 <fieldset class = "question">
-                    <legend>Did you like this Math Quiz (Explain your answer)?</legend>
+                    <legend>Est-ce que tu trouve que la politique enfant unique est nécessaire? Qu'est-ce que tu changerais?</legend>
                     <div id="divYN"><input type="radio" name="question7" class="yesNo" value="0" style="accent-color:#FD9800" checked="checked"><label>Yes</label>
                          <input type="radio" name="question7" class="yesNo" value="1" style="accent-color:#0000ff"><label>No</label></div>
                     <div><input type="textarea" name="question8" class="textbox"></div>
