@@ -6,48 +6,56 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="mobile.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
         <?php
             $percentages = getStatistics(getFile());
-            if ($_SERVER["REQUEST_METHOD"] == "POST" && !ipAdressExists($_SERVER['REMOTE_ADDR']) ) {
-                $file = getFile();
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                if( !ipAdressExists($_SERVER['REMOTE_ADDR']) ){
+                    $file = getFile();
 
-                if (isset($_POST['question1'])) {
-                    $question1 = (int)($_POST['question1']);
-                    $file[0][$question1] = (int)$file[0][$question1] + 1;
-                }
-                if (isset($_POST['question2'])) {
-                    $question1 = (int)($_POST['question2']);
-                    $file[1][$question1] = (int)$file[1][$question1] + 1;
-                }
-                if (isset($_POST['question3'])) {
-                    $question1 = (int)($_POST['question3']);
-                    $file[2][$question1] = (int)$file[2][$question1] + 1;
-                }
-                if (isset($_POST['question7'])) {
-                    $question1 = (int)($_POST['question7']);
-                    $file[3][$question1] = (int)$file[3][$question1] + 1;
-                }
+                    if (isset($_POST['question1'])) {
+                        $question1 = (int)($_POST['question1']);
+                        $file[0][$question1] = (int)$file[0][$question1] + 1;
+                    }
+                    if (isset($_POST['question2'])) {
+                        $question1 = (int)($_POST['question2']);
+                        $file[1][$question1] = (int)$file[1][$question1] + 1;
+                    }
+                    if (isset($_POST['question3'])) {
+                        $question1 = (int)($_POST['question3']);
+                        $file[2][$question1] = (int)$file[2][$question1] + 1;
+                    }
+                    if (isset($_POST['question7'])) {
+                        $question1 = (int)($_POST['question7']);
+                        $file[3][$question1] = (int)$file[3][$question1] + 1;
+                    }
 
-                $output = "";
-                for ($i=0; $i < 4; $i++) {
-                    for ($j=0; $j < count($file[$i]); $j++) {
-                        $output = $output . strval($file[$i][$j]);
-                        if ($j < count($file[$i])-1){
-                            $output = $output . ",";
+                    $output = "";
+                    for ($i=0; $i < 4; $i++) {
+                        for ($j=0; $j < count($file[$i]); $j++) {
+                            $output = $output . strval($file[$i][$j]);
+                            if ($j < count($file[$i])-1){
+                                $output = $output . ",";
+                            }
+                        }
+                        if ($i < 3){
+                            $output = $output . "|";
                         }
                     }
-                    if ($i < 3){
-                        $output = $output . "|";
+
+
+                    file_put_contents("statistics.bin", $output);
+                }
+                
+                if(isset($_POST['question8'])){
+                    if($_POST['question8']==file_get_contents("password")){
+                        resetDocuments();
                     }
                 }
-
-
-                file_put_contents("statistics.bin", $output);
-                $percentages = getStatistics($file);
+                $percentages = getStatistics(getFile());
 
             }
 
@@ -90,11 +98,16 @@
                     return false;
                 }
             }
+
+            function resetDocuments(){
+                file_put_contents("ipadresses.bin", "");
+                file_put_contents("statistics.bin", "0,0,0,0|0,0,0,0|0,0,0,0|0,0");
+            }
         ?>
 
         <div class = "box-div">
             <h1 id="title">Fun Math Quiz</h1> 
-            <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" >
+            <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"  onkeydown="return event.key != 'Enter';">
                 <fieldset class = "question">
                     <legend>What is 0 devided by 0?</legend>
                     <div><input type="radio" name="question1" class="checkbox" value="0" checked="checked"><label>Infinity</label></div>
@@ -132,7 +145,7 @@
                     <legend>Did you like this Math Quiz (Explain your answer)?</legend>
                     <div id="divYN"><input type="radio" name="question7" class="yesNo" value="0" style="accent-color:#FD9800" checked="checked"><label>Yes</label>
                          <input type="radio" name="question7" class="yesNo" value="1" style="accent-color:#0000ff"><label>No</label></div>
-                    <div><input type="textarea" name="question7.2" class="textbox"></div>
+                    <div><input type="textarea" name="question8" class="textbox"></div>
                 </fieldset>
                 <input type="submit" value="SUBMIT" id="submit">
             </form>
