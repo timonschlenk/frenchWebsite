@@ -156,11 +156,13 @@
                 </fieldset>
                 <fieldset class = "question">
                     <legend>Trouves-tu que la politique de l'enfant unique est nécessaire ? Qu'est-ce que tu changerais?</legend>
-                    <div id="divYN"><input type="radio" name="question7" class="yesNo" value="0" style="accent-color:#FD9800" checked="checked"><label>Yes</label>
-                         <input type="radio" name="question7" class="yesNo" value="1" style="accent-color:#0000ff"><label>No</label></div>
+                    <div id="divYN"><input type="radio" name="question7" class="yesNo" value="0" style="accent-color:#FD9800" checked="checked"><label>Oui</label>
+                         <input type="radio" name="question7" class="yesNo" value="1" style="accent-color:#0000ff"><label>Non</label></div>
                     <div><input type="textarea" name="question8" class="textbox" cols="4" placeholder="<?php echo($textfields[3])?>"></div>
                 </fieldset>
-                <input type="submit" value="SUBMIT" id="submit">
+                <div id="submit-div">
+                    <input type="submit" value="SUBMIT" id="submit">
+                </div>
             </form>
             <div id= "statistics">
                 <figure class="pie-chart" style="background:

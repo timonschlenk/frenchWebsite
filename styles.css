@@ -74,15 +74,20 @@
 
 }
 
+#submit-div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+}
+
 #submit {
-    padding: auto;
     border:5px solid #0000ff;
     border-radius: 100%;
     width: 8vw;
     height: 8vw;
     min-width: 100px;
     min-height: 100px;
-    margin:  20px 40vw;
     font-size: 20px;
 }
 
