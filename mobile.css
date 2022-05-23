@@ -1,6 +1,4 @@
-/* Rectangle 1 */
-html {
-    /* Rectangle 1 */
+:root {
 
 height: 100%;
 width: 100%;
@@ -17,197 +15,69 @@ body{
     width: 100%;
 }
 
-/* Rectangle 5 */
+.box-div {
 
-/* Rectangle 5 */
-#box-div {
-   
-    width: 90%;
-    height:  fit-content;
-    margin: 5%;
-    background: #D9D9D9;
-    border-radius: 29px;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 10%;
-    margin-left: 3%;
-    margin-top: 1%;
+
+    margin-right: 5%;
+    margin-left: 5%;
+    
+    position: absolute;
+    width: 90%;
+    
+    background: #D9D9D9;
+    border-radius: 29px;
+
 
 }
-
-
-
-
-
-
-
-/* Rectangle 30 */
-.bruh {
-    width: 80%;
-    height: 100%;
+.question {
+    z-index: 0;
     background: rgba(255, 255, 255, 0.880208);
-    border-radius: 28.63025px;
-    margin-bottom: 1%;
-    margin-top: 1%;
-    padding: 1% 0%;
-    text-align: center; 
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    width: fit-content;
+    flex-direction: column;
+    margin: 6%;
+    margin-left: 25%;
+    border-radius: 10px;
+
 }
 
+
+ 
+
+.orange{
+    background-color: orange;
+    border-radius: 10px;
+    padding-right: 3%;
+    color: white;
+    margin-bottom: 1%;
+}
 p{
 text-align: center;
 }
 
-
-.spanA {
-  position: relative;
-  right: 3%;
-  height: 100%;
-  color: white;
-  background-color: orange;
-  padding-right: 2%;
-  border-radius: 100px;
-  top: 100;
+h1{
+   text-align: center;
 }
 
-.spanA:hover{
-    background-color: rgb(191, 125, 3);
+.blue{
+    margin-bottom: 1%;
+background: rgb(0, 195, 255);
+border-radius: 10px;
+padding-right: 3%;
+color: white;
 }
 
-.spanB {
-    position: relative;
-    left: 5%;
-    color: white;
-    background-color: rgb(0, 166, 255);
-    padding-right: 2%;
-    border-radius: 10px;
-}
-
-.spanB:hover,.spanC:hover  {
-    background-color: rgb(0, 113, 154);
-}
-
-.spanC {
-    position: relative;
-    color: white;
-    background-color: rgb(0, 166, 255);
-    padding-right: 2%;
-    border-radius: 10px;
-    right: 3%;
-}
-
-
-
-.spanD {
-    position: relative;
-    left: 5%;
-    color: white;
-    background-color: orange;
-    padding-right: 2%;
-    border-radius: 10px;
-    bottom: 100%;
-    
-}
-
-.spanD:hover {
-    background-color: rgb(191, 125, 3);
-}
-
-
-
-
-.question-interpreté-input{
-    position: relative;
-    left: 1%;
-    
-    
-}
-
-label{
+.submit{
 position: relative;
+left: 43%;
 }
 
-#A{
- position: relative;
- top: 2%;  
+#last-question{
+width: 10%;
 }
-
-#B {
-    position: relative;
-    top: 2%;
-}
-
-#C {
-    position: relative;
-    top: 2%;
-}
-
-#D {
-    position: relative;
-    top: 2%;
-}
-
-#A2 {
-    position: relative;
-    top: 2%;
-}
-
-#B2 {
-    position: relative;
-    top: 2%;
-}
-
-#C2 {
-    position: relative;
-    top: 2%;
-}
-
-#D2 {
-    position: relative;
-    top: 2%;
-}
-
-
-#A2 {
-    position: relative;
-    top: 2%;
-}
-
-#B2 {
-    position: relative;
-    top: 2%;
-}
-
-#C2 {
-    position: relative;
-    top: 2%;
-}
-
-#D2 {
-    position: relative;
-    top: 2%;
-}
-
-
-#A3 {
-    position: relative;
-    top: 2%;
-}
-
-#B3 {
-    position: relative;
-    top: 2%;
-}
-
-#C3 {
-    position: relative;
-    top: 2%;
-}
-
-#D3 {
-    position: relative;
-    top: 2%;
-}
-
-
