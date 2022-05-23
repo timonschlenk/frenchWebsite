@@ -103,8 +103,7 @@
     flex-direction: column;
 }
 
-#easteregg {
+.easteregg {
     color: #00000000;
     margin: 0px;
-    position: absolute;
 }
