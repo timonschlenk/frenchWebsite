@@ -26,7 +26,7 @@
                 if (isset($_POST['question8'])){
                     $textfields[3] = $_POST['question8'];
                 }
-                if( !ipAdressExists($_SERVER['REMOTE_ADDR']) ){
+                if( !ipAddressExists($_SERVER['REMOTE_ADDR']) ){
                     $file = getFile();
 
                     if (isset($_POST['question1'])) {
@@ -97,17 +97,17 @@
                 return $returnFile;
             }
 
-            function ipAdressExists($adress){
-                $adresses = json_decode(file_get_contents("ipadresses.bin"));
-                if($adresses === null){
-                    $adresses[0] = strval($adress);
-                    file_put_contents("ipadresses.bin", json_encode($adresses));
+            function ipAddressExists($address){
+                $addresses = json_decode(file_get_contents("ipaddresses.bin"));
+                if($addresses === null){
+                    $addresses[0] = strval($address);
+                    file_put_contents("ipaddresses.bin", json_encode($addresses));
                     return false;
-                } else if (in_array(strval($adress), $adresses)){
+                } else if (in_array(strval($address), $addresses)){
                     return true;
                 } else {
-                    array_push(strval("," . $adress));
-                    file_put_contents("ipadresses.bin", json_encode($adresses));
+                    array_push($addresses, strval($address));
+                    file_put_contents("ipaddresses.bin", json_encode($addresses));
                     return false;
                 }
             }
