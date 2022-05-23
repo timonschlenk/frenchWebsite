@@ -234,6 +234,7 @@
             </div>
         </div>
         <script src="script.js"></script>
+        <a id="easteregg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Cliquer pour réponse correcte</a>
     </body>
 
 </html>

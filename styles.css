@@ -103,48 +103,8 @@
     flex-direction: column;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.easter-egg {
-    color: #D9D9D9;
+#easteregg {
+    color: #00000000;
     margin: 0px;
+    position: absolute;
 }
