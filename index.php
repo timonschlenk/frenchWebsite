@@ -113,7 +113,7 @@
             }
 
             function resetDocuments(){
-                file_put_contents("ipadresses.bin", "");
+                file_put_contents("ipaddresses.bin", "");
                 file_put_contents("statistics.bin", "0,0,0,0|0,0,0,0|0,0,0,0|0,0");
             }
         ?>
